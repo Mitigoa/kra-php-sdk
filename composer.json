@@ -26,6 +26,12 @@
         "issues": "https://github.com/Mitigoa/kra-php-sdk/issues",
         "source": "https://github.com/Mitigoa/kra-php-sdk"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Mitigoa/kra-php-sdk"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "ext-curl": "*",
@@ -75,6 +81,6 @@
         "fix:dry": "php-cs-fixer fix --config=.php-cs-fixer.php --dry-run --diff",
         "mutate": "infection --min-msi=80 --min-covered-msi=85"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
