@@ -2,9 +2,9 @@
 
 > Unofficial PHP SDK for Kenya Revenue Authority (KRA) GavaConnect APIs
 
-[![PHP](https://img.shields.io/packagist/php-v/kra-php/sdk)](https://packagist.org/packages/kra-php/sdk)
-[![License](https://img.shields.io/packagist/l/kra-php/sdk)](https://packagist.org/packages/kra-php/sdk)
-[![Version](https://img.shields.io/packagist/v/kra-php/sdk)](https://packagist.org/packages/kra-php/sdk)
+[![PHP](https://img.shields.io/packagist/php-v/kra-php/sdk)](https://packagist.org/packages/mitigoa/kra-php-sdk)
+[![License](https://img.shields.io/packagist/l/kra-php/sdk)](https://packagist.org/packages/mitigoa/kra-php-sdk)
+[![Version](https://img.shields.io/packagist/v/kra-php/sdk)](https://packagist.org/packages/mitigoa/kra-php-sdk)
 
 ## Overview
 
