@@ -1,8 +1,9 @@
 {
-    "name": "kra-php/sdk",
-    "description": "KRA GavaConnect PHP SDK - Official PHP client for Kenya Revenue Authority GavaConnect APIs",
+    "name": "mitigoa/kra-php-sdk",
+    "description": "KRA GavaConnect PHP SDK - Unofficial PHP client for Kenya Revenue Authority GavaConnect APIs",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.0",
     "keywords": [
         "kra",
         "gavaconnect",
@@ -13,20 +14,17 @@
         "pin",
         "tcc"
     ],
-    "homepage": "https://github.com/kra-php/sdk",
+    "homepage": "https://github.com/Mitigoa/kra-php-sdk",
     "readme": "README.md",
     "authors": [
         {
-            "name": "KRA PHP Team",
-            "email": "apisupport@kra.go.ke",
-            "homepage": "https://developer.go.ke"
+            "name": "Benson Mitigoa",
+            "email": "okonyobenson@gmail.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/kra-php/sdk/issues",
-        "source": "https://github.com/kra-php/sdk",
-        "docs": "https://kra-php.github.io/sdk",
-        "email": "apisupport@kra.go.ke"
+        "issues": "https://github.com/Mitigoa/kra-php-sdk/issues",
+        "source": "https://github.com/Mitigoa/kra-php-sdk"
     },
     "require": {
         "php": "^8.1",
