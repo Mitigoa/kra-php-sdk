@@ -1,0 +1,35 @@
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+    level: 8
+    paths:
+        - src
+    excludePaths:
+        - src/Auth/TokenCache.php
+    treatNamesAsUsed:
+        - '@internal'
+    scanDirectories:
+        - vendor
+    editorUrl: 'phpstorm://open?file=%file%&line=%line%'
+    editorUrlTitle: 'Open in IDE'
+    ignoreErrors:
+        -
+            message: '#Constructor parameter .* has no type hint#'
+            paths:
+                - tests/**
+        -
+            message: '#Return typehint of method .* is never#'
+            paths:
+                - tests/**
+    errors:
+        constructor:
+            required: true
+        parameter:
+            required: true
+        return:
+            required: true
+        property:
+            required: true
+    parallel:
+        processTimeout: 300.0

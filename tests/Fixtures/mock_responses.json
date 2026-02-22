@@ -1,0 +1,175 @@
+{
+    "pin_validate_success": {
+        "kraPin": "A000000010",
+        "taxpayerName": "ACME KENYA LIMITED",
+        "pinStatus": "ACTIVE",
+        "taxpayerType": "COMPANY",
+        "registrationDate": "2020-01-15",
+        "email": "info@acme.co.ke",
+        "phoneNumber": "+254700000000",
+        "address": "Nairobi",
+        "taxObligations": "VAT,PAYE,CIT",
+        "isValid": true,
+        "message": "PIN is valid"
+    },
+    "pin_validate_not_found": {
+        "message": "PIN not found",
+        "code": "PIN_NOT_FOUND",
+        "isValid": false
+    },
+    "pin_by_id_success": {
+        "kraPin": "A123456789B",
+        "taxpayerName": "JOHN DOE",
+        "pinStatus": "ACTIVE",
+        "idNumber": "12345678",
+        "isValid": true
+    },
+    "tcc_validate_success": {
+        "kraPin": "A000000010",
+        "taxpayerName": "ACME KENYA LIMITED",
+        "tccNumber": "TCC-2024-XXXXX",
+        "status": "VALID",
+        "expiryDate": "2024-12-31",
+        "issueDate": "2024-01-01",
+        "isValid": true,
+        "message": "TCC is valid"
+    },
+    "tcc_validate_expired": {
+        "kraPin": "A000000010",
+        "taxpayerName": "ACME KENYA LIMITED",
+        "tccNumber": "TCC-2023-XXXXX",
+        "status": "EXPIRED",
+        "expiryDate": "2023-12-31",
+        "isValid": false,
+        "message": "TCC has expired"
+    },
+    "tcc_validate_not_found": {
+        "message": "TCC not found",
+        "code": "TCC_NOT_FOUND",
+        "isValid": false
+    },
+    "taxpayer_obligations": {
+        "kraPin": "A000000010",
+        "items": [
+            {
+                "type": "VAT",
+                "frequency": "MONTHLY",
+                "status": "ACTIVE",
+                "dueDate": "2024-11-20"
+            },
+            {
+                "type": "PAYE",
+                "frequency": "MONTHLY",
+                "status": "ACTIVE",
+                "dueDate": "2024-11-20"
+            },
+            {
+                "type": "CIT",
+                "frequency": "ANNUAL",
+                "status": "ACTIVE",
+                "dueDate": "2024-04-30"
+            }
+        ]
+    },
+    "taxpayer_liabilities": {
+        "kraPin": "A000000010",
+        "totalOwed": 125000.00,
+        "items": [
+            {
+                "taxType": "PAYE",
+                "amount": 45000.00,
+                "period": "2024-09",
+                "status": "OUTSTANDING"
+            },
+            {
+                "taxType": "VAT",
+                "amount": 80000.00,
+                "period": "2024-10",
+                "status": "OUTSTANDING"
+            }
+        ]
+    },
+    "nil_return_success": {
+        "acknowledgementNumber": "NIL-2024-XXXXX",
+        "filedAt": "2024-10-20T14:32:00Z",
+        "pin": "A000000010",
+        "obligation": "VAT",
+        "period": "2024-10",
+        "status": "ACCEPTED",
+        "message": "NIL return filed successfully"
+    },
+    "eslip_verify_success": {
+        "prn": "PRN123456789",
+        "isValid": true,
+        "amount": 25000.00,
+        "paymentDate": "2024-10-15",
+        "taxType": "VAT",
+        "payerPin": "A000000010",
+        "payerName": "ACME KENYA LIMITED",
+        "status": "PAID",
+        "message": "Payment verified"
+    },
+    "eslip_verify_not_found": {
+        "prn": "PRN000000000",
+        "isValid": false,
+        "message": "Payment reference not found"
+    },
+    "etims_invoice_success": {
+        "invoiceId": "INV-2024-001-KRA",
+        "controlUnit": "VSCU-KRA-12345",
+        "qrCode": "base64_encoded_qr_code_here",
+        "submittedAt": "2024-11-01T10:15:00Z",
+        "status": "ACCEPTED",
+        "message": "Invoice submitted successfully"
+    },
+    "excise_check_success": {
+        "licenseNumber": "EXC-2024-XXXXX",
+        "licenseeName": "ACME KENYA LIMITED",
+        "status": "VALID",
+        "expiryDate": "2025-12-31",
+        "isValid": true,
+        "message": "License is valid"
+    },
+    "oauth_token_success": {
+        "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...",
+        "token_type": "Bearer",
+        "expires_in": 3600,
+        "refresh_token": "refresh_token_here"
+    },
+    "oauth_token_invalid_client": {
+        "error": "invalid_client",
+        "error_description": "Client authentication failed"
+    },
+    "api_error_400": {
+        "message": "Bad Request",
+        "code": "INVALID_REQUEST",
+        "details": {
+            "field": "pin",
+            "issue": "Invalid PIN format"
+        }
+    },
+    "api_error_401": {
+        "message": "Unauthorized",
+        "code": "UNAUTHORIZED",
+        "details": {}
+    },
+    "api_error_404": {
+        "message": "Not Found",
+        "code": "NOT_FOUND",
+        "details": {}
+    },
+    "api_error_429": {
+        "message": "Rate limit exceeded",
+        "code": "RATE_LIMIT_EXCEEDED",
+        "details": {
+            "limit": 100,
+            "remaining": 0,
+            "retryAfter": 60
+        }
+    },
+    "api_error_500": {
+        "message": "Internal Server Error",
+        "code": "SERVER_ERROR",
+        "details": {}
+    }
+}
